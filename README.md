@@ -158,6 +158,18 @@ returning a list of them.
     ...
     require.error.Invalid: Invalid type (int), must be a string
 
+## Using validators as parameters
+
+Any named parameter can also be a validator
+
+    >>> String2Bytes = String() & Bytes( encoding=cache.Get('encoding','utf-8') )
+    >>> context = String2Bytes.context( 'Jörg' )
+    >>> context.cache['encoding'] = 'punycode'
+    >>> context.result
+
+*Note*: in require, a String is a unicode, and Bytes is a str - thus behaves
+like you would expect from python 3. ( py2 unicode => py3 str; py2 str => py3 bytes )
+
 
 ## Schemas
 

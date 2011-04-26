@@ -1,5 +1,7 @@
-from ..lib import Context as __Context__, messages, MISSING, Parameterized, inherit
-from ..error import Invalid
+from ..lib.base import Invalid, Context as __Context__, Parameterized
+from ..lib.advice import messages, inherit
+from ..lib.constant import MISSING
+
 from copy import copy
 
 import logging,  types

@@ -1,5 +1,6 @@
 from .validator import *
-from .lib import MISSING, Context
+from .lib.base import Context
+from .lib.constant import MISSING
 
 import pkg_resources as __pkg_resources__
 __pkg_resources__.declare_namespace(__name__)

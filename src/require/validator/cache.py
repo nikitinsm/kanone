@@ -1,5 +1,6 @@
 from .core import ValidatorBase
-from ..lib import Invalid, MISSING, PASS
+from ..lib.base import Invalid
+from ..lib.constant import MISSING, PASS
 
 class CacheBase( ValidatorBase ):
 

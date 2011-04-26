@@ -1,5 +1,5 @@
 from ..validator.schema import Schema, ForEach
-from ..error import Invalid
+from ..lib.base import Invalid
 from ..util import varargs2kwargs, getArgSpec, getParameterNames
 from decorator import decorator
 

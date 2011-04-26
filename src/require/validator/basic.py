@@ -1,7 +1,7 @@
 from .core import Validator, validator2parameter
 
-from ..lib import messages
-from ..error import Invalid
+from ..lib.advice import messages
+from ..lib.base import Invalid
 
 from datetime import datetime
 
