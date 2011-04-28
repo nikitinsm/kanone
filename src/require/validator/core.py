@@ -217,12 +217,15 @@ class Compose( Validator ):
         , 'validator'
         )
 
+    parameter( 'validator', call='setValidator'  )
+    parameter( '**', call='setParameters' )
+
     __paramAlias__ = None
     __messageAlias__ = None
 
     taggedValidators = {}
 
-    def setArguments( self, validator ):
+    def setValidator( self, validator ):
         self.validator = validator
         self.taggedValidators = {}
         self.currentTaggedValidators = {}

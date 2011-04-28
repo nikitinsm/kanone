@@ -337,7 +337,7 @@ class Context( dict ):
 
         return child(path)
 
-
+"""
 from ..util import varargs2kwargs
 # Some kind of 'clonable' object -
 # we reinitialize child objects with inherited kwargs merged with new ones.
@@ -420,3 +420,4 @@ class Parameterized:
                 , names
                 )
         return klass.__parameterNames__
+"""
